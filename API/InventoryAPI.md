@@ -10,7 +10,7 @@ The inventory is used to hold and manage user items.
 | --------------|-------------| ------------ |
 | className | `String` | The className of the object; typically used to recognize object type. |
 | focusedSlot | `object Slot` | The slot which currently has the user's mouse hovering over it. |
-| slots | `Array<object Slot>` | An array containing all of this inventory's slots. |
+| slots | `Array<Slot>` | An array containing all of this inventory's slots. |
 
 ## Instantiation
 Every object has a constructor. The constructor is called via the `Class` object
@@ -26,7 +26,7 @@ local Inventory = Class.new('Inventory', param1, param2, ...);
 
 | Parameter | Type | Description  |
 | --------------|-------------| ------------ |
-| player | `object MetaPlayer` | The MetaPlayer object that the inventory belongs to. |
+| player | `MetaPlayer` | The MetaPlayer object that the inventory belongs to. |
 | element | `Rbx<GuiObject>` | The GUI that the inventory should be generated in. Requires a child named "SlotsContainer" |
 | size `optional` | `Integer` | The number of slots to generate in `element`. Defaults to `24` |
 
@@ -144,7 +144,7 @@ Removes the quantity of items from the specified slot
 
 | Parameter | Type | Description |
 | -------------- | ------------- | ------------ |
-| slot | `object Slot` | The slot to remove items from |
+| slot | `Slot` | The slot to remove items from |
 | quantity | `Integer` | The quantity of the item to remove |
 
 #### Returns
@@ -166,7 +166,7 @@ Attempts to fill the specified slot to max stack by taking from other slots with
 
 | Parameter | Type | Description |
 | -------------- | ------------- | ------------ |
-| slot | `object Slot` | The slot to fill |
+| slot | `Slot` | The slot to fill |
 
 #### Returns
 
