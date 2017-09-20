@@ -75,6 +75,8 @@ Tries to fill any unfilled slots that already contain that item.
 local leftoverCoins = Inventory:addItem('Coin', 5000);
 ```
 
+___
+
 ### Inventory:getSlotsByItemType({itemType})
 Scans the inventory for slots that contain the specified itemType
 
@@ -96,6 +98,8 @@ Scans the inventory for slots that contain the specified itemType
 local slots = Inventory:getSlotsByItemType('Coin');
 ```
 
+___
+
 ### Inventory:getEmptySlots()
 Scans the inventory for empty slots
 
@@ -114,6 +118,8 @@ None.
 -- Gets all empty slots.
 local slot = Inventory:getEmptySlots();
 ```
+
+___
 
 ### Inventory:removeItem({itemType}, {quantity})
 Removes up to the quantity of the itemType specified from any of the slots in the inventory.
@@ -137,6 +143,8 @@ Removes up to the quantity of the itemType specified from any of the slots in th
 local leftover = Inventory:removeItem('Coin', 5000);
 ```
 
+___
+
 ### Inventory:removeItem({slot}, {quantity})
 Removes the quantity of items from the specified slot
 
@@ -158,6 +166,8 @@ Removes the quantity of items from the specified slot
 -- Removes up to 5000 coins from SomeSlot.
 local leftover = Inventory:removeItem(SomeSlot, 5000);
 ```
+
+___
 
 ### Inventory:fillSlot({slot})
 Attempts to fill the specified slot to max stack by taking from other slots with the same item type.
