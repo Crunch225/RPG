@@ -1,6 +1,8 @@
 # Template
 This is an API template. It is not a real API in the game engine.
 
+##### Inherits from: `SomeClass`
+
 ## Fields
 
 | Field         | Type          | Description  |
