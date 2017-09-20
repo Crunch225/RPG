@@ -9,7 +9,7 @@ The inventory is used to hold and manage user items.
 | Field         | Type          | Description  |
 | --------------|-------------| ------------ |
 | className | `String` | The className of the object; typically used to recognize object type. |
-| focusedSlot | `object Slot` | The slot which currently has the user's mouse hovering over it. |
+| focusedSlot | `Slot` | The slot which currently has the user's mouse hovering over it. |
 | slots | `Array<Slot>` | An array containing all of this inventory's slots. |
 
 ## Instantiation
